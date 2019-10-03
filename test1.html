@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<!-- myFirst.html -->
+<title>My very first web page!</title>
+</head>
+<body>
+<h1>This is my first web page!</h1>
+<p>
+This is the first web page I've ever made,
+and I'm extremely proud of it.
+It is so cool!
+</p>
+
+
+
+<!-- myFirst.html  //<fieldset>
+//<input type = "button"
+//value = "blue"
+//onclick = "document.body.style.backgroundColor = 'blue'"/>
+//<input type = "button"
+//value = "white"
+//onclick = "document.body.style.backgroundColor = 'white'" />
+
+
+-->
+
+<!--
+//<input type = "button"
+// function askWhat
+//var request = "";
+
+-->
+
+
+<h1>Click a button to change the color</h1>
+<form action = "">
+<fieldset>
+<input type = "button"
+value = "blue"
+onclick = "document.body.style.backgroundColor = 'blue'"/>
+<input type = "button"
+value = "white"
+onclick = "document.body.style.backgroundColor = 'white'" />
+
+
+<script type = "text/javascript">
+// from backgroundColors
+function makeBlue(){
+document.body.style.backgroundColor = "blue";
+} // end changeColor
+function makeWhite(){
+document.body.style.backgroundColor = "white";
+}
+</script>
+
+<script type = "text/javascript">
+//LanguageRequested = prompt("What language are you requesting?");
+//alert("Requesting " + LanguageRequested + " to English translation.");
+
+//Attempting to make the previous into functions:
+function askLanguage(){
+LanguageRequested = prompt("What language are you requesting?")
+}
+
+</script> 
+
+<p>Click the button to choose language</p>
+<form action = "">
+<fieldset>
+
+
+		  <input type = "button"
+		  value = "Click for translator"
+		  <!-- //onclick = "sayHi()"> -->
+		  onclick = "makeBlue()" />
+
+</fieldset>
+
+
+<script type = "text/javascript">
+// from textBoxes.html
+function sayHi(){
+var txtName = document.getElementById("txtName");
+var txtOutput = document.getElementById("txtOutput");
+var name = txtName.value;
+txtOutput.value = "Hi there, " + name + "!"
+} // end sayHi
+</script>
+
+<input type = "button"
+value = "click me"
+onclick = "sayHi()"/>
+<input type = "text"
+
+
+</body>
+</html>

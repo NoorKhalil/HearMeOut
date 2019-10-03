@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+
+
+<form>
+	  <fieldset>
+			    <legend>Personal Information:</legend>
+    <label for='name'>Name</label>
+    <input type='text' id = 'name' name = 'name' value = 'Colleen'><br/>
+    		<label>Email: <input type='email' name = 'email' placeholder="me@me.com"></label><br/>
+    		<label for='birth'>Birth</label>
+    		<input type = 'submit' value = "Click Here">
+  </fieldset>
+</form>   
+  
+ </body>
+</html>
+
+
+<button onclick="requestFunction()"> What language are you requesting?</button>
+
+<script type = "text/javascript">
+ 
+var language = "No language sejjlected";
+
+function requestFunction() {
+  var requestedLanguage = prompt("What language are you requesting? ");
+  language = requestedLanguage;
+  document.getElementById("language").innerHTML = language;
+}
+
+//Print chosen language
+document.write(language)
+
+</script>
+

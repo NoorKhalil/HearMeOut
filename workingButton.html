@@ -1,0 +1,32 @@
+
+
+<body onload="loadFruits()">
+
+<button onclick="requestFunction()"> What language are you requesting?</button>
+
+<p id="language"></p>
+
+
+<script type = "text/javascript">
+  
+var language = "Arabic";
+
+function loadFruits(){
+   document.getElementById("language").innerHTML = language;
+}
+
+//var language = "Arabic";
+
+function requestFunction() {
+  var requestedLanguage = prompt("What language are you requesting? ");
+  language = requestedLanguage;
+  document.getElementById("language").innerHTML = language;
+}
+
+if (language = "Arabic"){
+    document.write("Hello " +  "Belaaraby")
+}
+else
+  	document.write("Feeling shy?")
+
+</script>
